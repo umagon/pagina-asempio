@@ -1,0 +1,449 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	background-color: white;
+	font: 16px "Trebuchet MS", Helvetica, sans-serif;
+	text-align: left;
+}
+
+h2, h3, h4 {
+	text-align: left;
+}
+
+h2 {
+	color: #727;
+	font-weight: normal;
+	font-size: 36px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding: 10px 20px
+}
+
+h3 {
+	color: #0A0;
+	font-size: 28px;
+	margin: 20px 10px 5px 0px;
+}
+
+h4 {
+	color: #44F;
+	font-size: 20px;
+	margin: 20px 10px 5px 0px;
+}
+
+hr {
+	border: 4px solid #11D;
+	margin-bottom: 30px;
+}
+
+p {
+	margin-top: 15px;
+}
+
+ul {
+	margin: 30px 0;
+}
+
+li {
+	list-style-type: bullet;
+	margin-left: 30px;
+	position: relative;
+	margin-top: 10px;
+	text-align: left;
+}
+
+img {
+	max-width: 100%;
+}
+
+nav {
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 100%;
+	margin-bottom: 20px;
+	white-space: nowrap;
+}
+
+nav ul {
+	height: 30px;
+	list-style-type: none;
+	margin: 0 auto;
+	vertical-align: top;
+	display: inline-block;
+}
+
+nav li {
+	display: inline;
+	float: left;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	box-shadow: 5px 0px 5px -6px gray, -5px 0px 5px -6px gray;
+}
+
+nav a {
+	color: #282;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: block;
+	cursor: pointer;
+}
+
+nav a:hover {
+	color: white;
+	background: #3D3;
+}
+
+nav li ul {
+	display: none;
+}
+
+nav li:hover ul {
+	position: absolute;
+	display: block;
+}
+
+nav li li {
+	float: none;
+}
+
+nav li li a {
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: inset -2px 0px 3px 0px whitesmoke;
+	border-left: 6px solid lightgreen;
+}
+
+nav li li a:hover {
+	border-radius: 0;
+}
+
+ul.enf>li {
+	list-style-type: decimal;
+	font: 22px Arial;
+}
+
+#header {
+	color: white;
+	margin-bottom: 20px;
+	vertical-align: top;
+	text-align: center;
+	box-shadow: 0px 5px 10px -2px purple, 0px 20px 20px -10px #88E;
+	/*box-shadow: 0px 10px 10px -10px #88E,
+		0px 20px 20px -20px #88E,
+		0px 30px 25px -30px #88E,
+		0px 40px 20px -40px purple,
+		0px 50px 10px -50px purple;*/
+	background: url('assets/img/bg-header.png');
+	background-size: cover;
+	background-position-y: 300px;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.noticia div {
+	border-left: 1px solid #DDD;
+	border-width: 0 1px 0 1px;
+	padding: 20px 40px 20px 10px;
+	background: url('assets/img/bg-noticia.png') repeat-y right;
+}
+
+.noticia h2 {
+	color: white;
+	font-weight: normal;
+	font-size: 36px;
+	background-color: #92D;
+	padding: 8px 10px 8px 15px;
+	margin-bottom: 0;
+	border-top-right-radius: 30px
+}
+
+.noticia img {
+	float: left;
+	margin-right: 20px;
+}
+
+.noticia span {
+	color: gray;
+	font-style: italic;
+	font-size: 14px;
+	margin: -12px 0 18px 5px;
+	display: block;
+}
+
+.noticia div:after {
+	content: " ";
+	/* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.col_entry {
+	margin: 0 auto;
+	display: block;
+	width: 90%;
+}
+
+.col_entry {
+	font-size: 14px;
+}
+
+.padding {
+	padding: 10px;
+}
+
+.pad {
+	padding: 30px 10px;
+}
+
+.p_ver {
+	padding: 30px 0;
+}
+
+.p_hor {
+	padding: 0 30px;
+}
+
+.margen {
+	margin: 30px;
+}
+
+.m_ver {
+	margin: 30px 10px;
+}
+
+.m_hor {
+	margin: 10px 30px;
+}
+
+.gris {
+	background: whitesmoke;
+}
+
+.col_1 {
+	width: 8.3%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_2 {
+	width: 16.6%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_3 {
+	width: 24.9%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_4 {
+	width: 33.2%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_5 {
+	width: 41.5%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_6 {
+	width: 49.8%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_7 {
+	width: 58.1%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_8 {
+	width: 66.4%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_9 {
+	width: 74.7%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_10 {
+	width: 83%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_11 {
+	width: 91.3%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.col_12 {
+	width: 99.6%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.secundario {
+	color: gray;
+}
+
+.tx_izq {
+	text-align: left;
+}
+
+.tx_der {
+	text-align: right;
+}
+
+.tx_cen {
+	text-align: center;
+}
+
+.tx_arr {
+	text-align: top;
+}
+
+.tx_aba {
+	text-align: bottom;
+}
+
+.tx_mid {
+	text-align: middle;
+}
+
+table.lista {
+	width: 100%
+}
+
+table.lista td:last-child {
+	font: 22px Segoe UI;
+	color: blue;
+}
+
+hr.separador {
+	border: 1px solid lightgray;
+	margin: 30px 0;
+}
+
+div.subtitulo {
+	color: gray;
+	margin: 5px 0;
+	text-align: center
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	font-size: medium;
+	color: #333;
+}
+
+#cuerpo {
+	min-height: 800px;
+	text-align: justify;
+	padding-bottom: 50px;
+	vertical-align: top;
+	overflow: auto;
+}
+
+#cuerpo:after {
+	content: " ";
+	/* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+#footer {
+	padding: 40px;
+	background-color: purple;
+	color: #B8B;
+	box-shadow: 0px -5px 7px 0px purple, 0px -20px 20px -7px #88E;
+}
+
+#footer span {
+	padding: 5px 30px;
+	vertical-align: top;
+	text-align: center;
+}
+
+#footer div {
+	text-align: center;
+}
+
+#footer a {
+	color: lightgray;
+}
+
+#firma {
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+	margin-top: 30px;
+}
+
+#copyright {
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+#logo {
+	display: inline-block;
+	margin: 0;
+	padding-top: 10px;
+}
+
+#logo img {
+	width: 200px;
+	display: inline-block;
+}
+
+#logo p {
+	display: inline-block;
+	font-size: 26px;
+	font-style: italic;
+	color: #A09;
+	text-shadow: 1px 1px 15px whitesmoke, 1px 1px 15px whitesmoke, 1px 1px 25px whitesmoke, 1px 1px 25px whitesmoke;
+	padding: 15px;
+	vertical-align: top;
+}
+
+#comision_directiva {
+	background-image: url('assets/img/autoridades/comision_directiva_2014.png');
+	background-size: cover;
+	background-position: bottom;
+	height: 300px;
+}
+
+#objetivos_particulares {
+	background-image: url('assets/img/fotos/026.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 250px;
+}
