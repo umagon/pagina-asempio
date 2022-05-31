@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -20,6 +19,8 @@ import { HistoriaComponent } from './components/historia/historia.component';
 import { ObjetivosParticularesComponent } from './components/objetivos-particulares/objetivos-particulares.component';
 import { OpinionesComponent } from './components/opiniones/opiniones.component';
 import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -43,66 +44,8 @@ import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     HttpModule,
-    RouterModule.forRoot([
-      {
-        path: 'novedades',
-        component: NovedadesComponent
-      },
-      {
-        path: 'asociados',
-        component: AsociadosComponent
-      },
-      {
-        path: 'autoridades',
-        component: AutoridadesComponent
-      },
-      {
-        path: 'beneficios-empresas',
-        component: BeneficiosEmpresasComponent
-      },
-      {
-        path: 'beneficios-socios',
-        component: BeneficiosSociosComponent
-      },
-      {
-        path: 'capacitaciones',
-        component: CapacitacionesComponent
-      },
-      {
-        path: 'conferencias',
-        component: ConferenciasComponent
-      },
-      {
-        path: 'contacto',
-        component: ContactoComponent
-      },
-      {
-        path: 'convenios',
-        component: ConveniosComponent
-      },
-      {
-        path: 'historia',
-        component: HistoriaComponent
-      },
-      {
-        path: 'objetivos-particulares',
-        component: ObjetivosParticularesComponent
-      },
-      {
-        path: 'opiniones',
-        component: OpinionesComponent
-      },
-      {
-        path: 'quienes-somos',
-        component: QuienesSomosComponent
-      },
-      {
-        path: '',
-        redirectTo: '/novedades',
-        pathMatch: 'full'
-      }
-    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

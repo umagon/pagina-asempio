@@ -3,6 +3,8 @@
 # compiled output
 /dist
 /tmp
+/aot
+**/__pycache__
 
 # dependencies
 /node_modules
@@ -30,6 +32,7 @@
 npm-debug.log
 testem.log
 /typings
+*.map
 
 # e2e
 /e2e/*.js
